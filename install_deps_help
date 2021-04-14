@@ -10,6 +10,7 @@ $VENV: pip install opencv-python scikit-image scipy numpy face-recognition dlib 
 
 ffmpeg -re -i https://hls7.vladlink.ru/live/vlcam_487/playlist.m3u8 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0
 sudo ffmpeg -re -i index.mp4 -map 0:v -f v4l2 /dev/video0
+ ffmpeg -stream_loop 10 -re -i index.mp4 -map 0:v -f v4l2 /dev/video0
 
 
 ssh -L 3000:localhost:3000 savalin@178.140.10.155 -p 2252

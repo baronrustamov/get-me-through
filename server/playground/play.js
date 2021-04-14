@@ -1,8 +1,8 @@
 // To play with packages and check the use cases
-// let PythonShell = require('python-shell');
-// var pyshell = new PythonShell('my_script.py',{
+ let PythonShell = require('python-shell');
+ var pyshell = new PythonShell('my_script.py',{
 //   pythonOptions: '-u' //disable python output buffering
-// });
+ });
 console.log('hii');
 console.log(__dirname);
 var spawn = require('child_process').spawn,
