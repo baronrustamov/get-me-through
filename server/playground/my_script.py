@@ -105,7 +105,7 @@ def main():
         
         # Send the names of the people to the parent process
         # os.write(3,b'{"dt" : "This is a test"}')
-        print(face_names, flush=True)
+        print(face_names)
             
         process_this_frame = not process_this_frame
         
