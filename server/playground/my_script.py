@@ -124,7 +124,7 @@ def main():
                 #Unauthenticated person
                 color = (0,0,255) #RED
                 #print so that parent process in Node.js can use it
-                print(name,flush=True)
+                print(name)
 
             #Display border
             cv2.rectangle(frame, (left,top), (right,bottom), color, 2)
