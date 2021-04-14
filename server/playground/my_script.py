@@ -9,7 +9,7 @@ home = str(os.path.dirname(os.path.abspath(__file__))) + "/../../"
 file_names = glob.glob(home + "/known_people/*.jp*g")
 #end
 
-print("In the py\n", flush=True)
+print("In the py\n")
 #Read data from stdin
 def read_in():
     lines = sys.stdin.readline()
